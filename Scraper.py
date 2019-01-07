@@ -68,6 +68,8 @@ def main():
                 duration = extractDuration(result)
                 itinerary = extractItinerary(result)
 
+                time.sleep(2)
+                
                 # click on "Select flight" to proceed to the arrival flight selection page
                 # note that this selector only works for "Best flights"
                 buttonSelector = "#flt-app > div.gws-flights__flex-column.gws-flights__flex-grow > main.gws-flights__flex-column.gws-flights__active-tab.gws-flights__flights-search > div.gws-flights__flex-grow.gws-flights-results__results.gws-flights__flex-column.gws-flights__scrollbar-padding > div.gws-flights-results__results-container.gws-flights__center-content > div:nth-child(3) > div.gws-flights__flex-grow.gws-flights-results__slice-results-desktop > div.gws-flights-results__best-flights > ol > li:nth-child("
